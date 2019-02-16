@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  knnime_flask_service:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+
+    ports:
+      - "2222:22"
+      - "8080:8080"
