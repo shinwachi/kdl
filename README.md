@@ -5,6 +5,12 @@
 
 In /docker folder: an example of dockerized web service which runs knime workflow.
 
+To run (from project root dir):
+
+cd docker
+docker-compose build
+docker-compose up
+
 To test the dockerized web service, use curl or postman:
 
 ```bash
@@ -35,3 +41,4 @@ Output:
   "b" : 3.0
 } ]
 ```
+
