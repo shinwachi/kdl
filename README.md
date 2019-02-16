@@ -1,5 +1,4 @@
-# kdl
-
+# KDL: K Descriptor Language
 
 
 ## Knime Webservice Example
