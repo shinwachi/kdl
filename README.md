@@ -7,9 +7,11 @@ In /docker folder: an example of dockerized web service which runs knime workflo
 
 To run (from project root dir):
 
+```bash
 cd docker
 docker-compose build
 docker-compose up
+```
 
 To test the dockerized web service, use curl or postman:
 
