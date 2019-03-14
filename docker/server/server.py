@@ -20,8 +20,8 @@ def api_v0_workflow():
 	payload = request.get_data()
 
 	
-	with open(INFILE_PATH, "wb") as infile:
-		infile.write(payload)
+	with open(INFILE_PATH, "wb") as infile
+:		infile.write(payload)
 	cmd = '/knime_3.7.1/knime -nosplash -reset -nosave -application org.knime.product.KNIME_BATCH_APPLICATION -workflowFile=/worker/workflow.knwf'.split()
 	process = Popen(cmd)
 
