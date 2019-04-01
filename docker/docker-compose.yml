@@ -5,7 +5,15 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    volumes:
+      - ./io:/io 
 
+    environment:
+      # for equinox p2 director
+      - VER=3.7
+      - DESTINATION=/knime_3.7.1
+      - REPOSITORIES=http://update.knime.com/analytics-platform/"$VER",http://update.knime.com/community-contributions/trusted/"$VER",http://update.knime.com/community-contributions/"$VER"
+      - P2=org.eclipse.equinox.p2.director
     ports:
       - "2222:22"
       - "8080:8080"

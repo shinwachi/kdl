@@ -26,6 +26,6 @@ COPY ./worker /worker
 RUN apt-get install -y git
 RUN git clone https://github.com/knime-dsl/kdl.git
 RUN echo 'alias python3=python3.7' >  ~/.bashrc
-
+# RUN cd /kdl && python3 setup.py install
 # RUN cd /kdl && pip3 install -r requirements.txt && python3.7 setup.py install
 CMD ["/bin/bash", "/server/run_server.sh"]
